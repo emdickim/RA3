@@ -3,6 +3,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.ServerSocket;
 import java.net.Socket;
+import java.util.Scanner;
 
 public class Servidor {
     
@@ -44,6 +45,7 @@ public class Servidor {
 
     public static void main(String[] args) throws IOException {
                 Servidor servidor = new Servidor();
+                Scanner scanner = new Scanner(System.in);
         try {
             servidor.connecta();
             servidor.repDades();
